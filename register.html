@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+/>
+</head>
+<style>
+    .registerForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .text-center{
+        text-align: center;
+
+    }
+    .name-group{
+        display: flex;
+        gap: 8px;
+    }
+    img{
+        max-width: 35%;
+    }
+</style>
+
+<body>
+    <main class="container registerForm">
+        <form> 
+            <header class="text-center">
+                <img src="./images/logo.png" />
+                <h1>Crea una cuenta</h1>
+                <h7>Ingresa la siguiente información para registrarte.</h7>
+
+
+            </header>
+           
+     <section>
+        <div class="name-group">
+            <label>
+                Name
+                <input type="text" placeholder="Ej. Alessandra" />
+            </label>
+            <label>
+                Second name
+                <input type="text" placeholder="Ej. Becerra" />
+            </label>
+        </div>
+
+            <label>
+                Age
+                <input type="number" placeholder="Ej. 18" required />
+            </label>
+
+            <label>
+                Bornday
+                <input type="date" name="fecha">
+            </label>
+
+            <label>
+                Gender
+                <select name="genero">
+                    <option value="">Select your gender</option>
+                    <option value="f">Female</option>
+                    <option value="m">Male</option>
+                    <option value="o">Other</option>
+                </select>
+            </label>
+
+            <label>
+                Email
+                <input type="email" placeholder="Ej. user@gmail.com" requierd />
+            </label>
+
+            <label>
+                Number
+                <input type="number" placeholder="Número de teléfono" requierd />
+            </label>
+            <label>
+                Ciudad
+                <input type="text" placeholder="Ej. Chiclayo"  />
+            </label>
+            <label>
+                <input type="checkbox" name="accept" value="acc"  />
+                    Acepto los términos, condiciones y políticas
+              </label>
+            <input type="submit" value="Guardar" />
+    </section>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,291 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.wrapper {
+  width: min(100% - 3rem, 1440px);
+  margin: 0 auto;
+}
+header {
+  background-color: #798088; /* Color azul oscuro */
+  color: #fff;
+  padding: 20px 0;
+}
+header img{
+  max-width: 30%;
+
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2980b9; /* Color azul vibrante */
+}
+
+.auth-links {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-links .register-link {
+  background-color: #2980b9; /* Color azul vibrante */
+}
+
+.auth-links .login-link {
+  border: 1px solid #fff;
+}
+
+.auth-links a:hover {
+  background-color: #fff;
+  color: #2980b9;
+}
+
+.hero {
+  background-size: cover;
+  background-color: #bdc3c7; /* Color gris medio */
+  background-position: center;
+  padding: 100px 0; /* Incrementa el espacio interno para que se vea más espacioso */
+  text-align: center;
+  color: #fff; /* Color del texto */
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #333b41; /* Color azul vibrante */
+}
+.featuresInicio {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(132, 164, 189); /* Color gris medio */
+}
+.feature-inicio {
+  justify-content: center;
+  margin-left: 40%;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.featureInicio {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  max-width: 80px;
+  width: 50%;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+  max-width: 40%;
+  height: auto;
+}
+
+.feature-left {
+  justify-content: flex-start;
+  margin-left: -20%;
+}
+
+.feature-right {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-right: -20%;
+}
+
+.feature-left .feature-text {
+  margin-left: 20px;
+}
+
+.feature-right .feature-text {
+  margin-right: 20px;
+}
+
+.feature-text {
+  max-width: 60%;
+}
+
+.about-team {
+  background-color: #bdc3c7; /* Color gris medio */
+  padding: 50px;
+  text-align: center;
+}
+
+.about-team h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #34495e; /* Color azul grisáceo */
+  margin-bottom: 30px;
+}
+
+.team-member {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #34495e; /* Color azul grisáceo */
+}
+
+.team-member p {
+  font-family: "Raleway", sans-serif;
+  color: #333;
+}
+
+footer {
+  background-color: #34495e; /* Color azul grisáceo */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+h1, h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #3e88f7; /* Color azul vibrante */
+}
+.hero h1{
+  font-size: 3em; /* Aumenta el tamaño del título */
+  margin-bottom: 20px; /* Agrega un espacio inferior al título */
+  color: #6e6e7063; /* Color azul vibrante */
+
+}
+.hero p {
+  text-align: center; /* Centra horizontalmente */
+  font-size: 1.6em; /* Aumenta el tamaño del texto */
+  margin: 50px auto; /* Margen vertical y centrado horizontal */
+  padding: 0 130px; /* Aumenta el espacio alrededor del texto */
+  color: #2a2b2e; /* Color azul vibrante */
+}
+p {
+  color: #ffffff; /* Color azul vibrante */
+
+}
+button {
+  font-size: 1.2em; /* Aumenta el tamaño del botón */
+  padding: 15px 30px; /* Aumenta el espacio interno del botón */
+  border-radius: 50px; /* Hace que el botón tenga bordes redondeados */
+  background-color: #2980b9; /* Color azul vibrante */
+  border: none;
+  color: #ffffff;
+  min-width: 170px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #1a5f85; /* Color azul oscuro */
+  transform: translateY(-5px);
+}
+
+/* Media Queries */
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .features {
+    padding: 20px;
+  }
+
+  .feature {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .feature-left .feature-text,
+  .feature-right .feature-text {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .feature-left img,
+  .feature-right img {
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+
+  button {
+    min-width: 100px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .features {
+    padding: 10px;
+  }
+
+  .feature-left img,
+  .feature-right img {
+    max-width: 70%;
+  }
+
+  .feature-left,
+  .feature-right {
+    justify-content: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  button {
+    min-width: 80px;
+  }
+}
